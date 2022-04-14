@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Unify.mnemonicPageController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utd.database.UnlockPageController">
    <children>
       <Label layoutX="148.0" layoutY="170.0" text="Mnemonic Phrase:">
          <font>
@@ -13,7 +13,7 @@
          </font>
       </Label>
       <PasswordField fx:id="phraseField" layoutX="300.0" layoutY="170.0" promptText="Phrase" />
-      <Button fx:id="unlockButton" layoutX="247.0" layoutY="235.0" mnemonicParsing="false" text="Unlock">
+      <Button fx:id="unlockButton" layoutX="247.0" layoutY="235.0" mnemonicParsing="false" onAction="#unlockAccount" text="Unlock">
          <font>
             <Font size="24.0" />
          </font>
